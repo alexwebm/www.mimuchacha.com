@@ -3,53 +3,143 @@
 @import url('http://fonts.googleapis.com/css?family=Pontano+Sans');
 
 /* Formatos generales */
+body{background: #f2f2f2;}
 *{padding:0; margin:0;}
 ul{margin: 0; padding: 0;}
 ul li{list-style: none;}
 a{text-decoration: none;}
-h1{color: #284ba9; font-size: 23px; padding: 0 10px;}
+h1{color: #284ba9; font-size: 20px;}
 h2{color: #091647; font-size: 16px; font-family: arial; padding: 0 10px;}
+h2.titleBlueqs{color: #37a4fb;}
 h4, h5{text-align: left;}
-p{text-align: justify;}
+p{font-family: 'Pontano Sans', Arial, Helvetica; font-size: 14px; margin-bottom: 10px;}
 span{color: #7b7a7a; font-size: 15px; font-family:arial;}
 
+.textBlue{color: #4caafb;}
+.textOrange{color: #eca804;}
+.textCenter{text-align: center;}
+
 .container img{max-width: 100%;}
+.rel{position: relative;}
 .clr{clear: both;}
+.nomrg{margin-left: 0px !important;}
 
 /* Header */
-.boxHeader{width: 100%; background: #07113f; padding-top: 15px;}
-.phoneNumber{color:#fff; text-align: right;}
-.phoneNumber span{display: block; font-size: 20px; font-weight: bold;}
+.boxlogo{min-height: 110px;}
+#logo{position: absolute; top: 0; left: -100px;}
+.boxHeader{width: 100%; background: #07113f; padding: 15px 0 10px;}
+.phoneNumber{color:#fff; text-align: right; margin-top: 25px;}
+.phoneNumber span{display: block; font-size: 24px; font-weight: bold; color: #fff;}
 .phoneNumber small{font-size: 14px; color: #f6de0f;}
 
-header nav{margin-top: 15px; background: linear-gradient(#fdfdfe, #e0e2e6); position: relative;}
-ul li{float: left; padding: 10px 0; border-right: 1px solid #ccc; transition: all 0.3s linear;}
-ul li a{color: #091647; font-size: 20px; font-weight: bold; padding: 10px; transition: all 0.3s linear;}
+.boxHeaderSlr{max-height: 565px;}
 
-ul li:hover{background: linear-gradient(#f3d20e, #ebb303); }
-ul li:hover > a{color: #fff;}
+nav{width:100%; margin-top: 25px !important; background: linear-gradient(#fdfdfe, #e0e2e6); position: relative;}
+.menu li{float: left; padding: 10px 0; border-right: 1px solid #ccc; transition: all 0.3s linear;}
+.menu li a{color: #091647; font-size: 20px; font-weight: bold; padding: 10px; transition: all 0.3s linear;}
+
+.menu li:hover{background: linear-gradient(#f3d20e, #ebb303); }
+.menu li:hover > a{color: #fff;}
 
 .face, .twit{position: absolute;}
 .face{top:4px; right: 50px;}
 .twit{top:4px; right: 5px;}
 
 .current-li{background: linear-gradient(#f3d20e, #ebb303);}
-.current-a{color: #fff;}
+.current-a{color: #fff !important;}
+
+/*home*/
+.boxhome{margin-top: 15px; background: linear-gradient(#fefefe, #f4f4f5); }
+
+.boxservices{background: linear-gradient(#ffffff, #f3f4f5); min-height: 150px; border-bottom: 1px solid #ebeced; border-radius: 0 0 3px 3px; padding: 10px; position: relative;}
+.boxservices small{display: block; font-size: 18px;}
+.boxservices span{color: #284ba9; font-size: 26px; font-weight: bold; display: block; margin-bottom: 30px;}
+.boxservices img{position: absolute; right: 0; bottom: 0;}
+.leermashome{background: linear-gradient(#f2cf0d,#ecb604); padding: 10px 25px; border-radius: 3px; color: #fff; transition: all 0.3s linear;}
+.leermashome:hover{background:#ecb604;}
+
+.titleBlue{background: linear-gradient(#053183, #0d285f); padding-left: 20px;}
+.titleBlue h1{padding: 10px 0; color: #fff;}
+.titleGrey{background: linear-gradient(#ffffff, #f4f5f6);}
+.titleGrey h1{padding: 10px 0 10px 20px; color: #284ba9; border-bottom: 1px solid #ebeced;}
+
+.rowTypeService{border-bottom: 1px solid #ccc; margin-bottom: 10px;}
+.rowTypeService img{float: left; width: 45%; margin-right: 10px;}
+.boxDescrTypes{text-align: left; float: right; width: 50%;}
+.boxDescrTypes h2{font-size: 14px; padding: 0px !important;}
+
+/*quienes somos*/
+.rowElement{border-bottom: 1px solid #ccc; margin-bottom: 10px; padding-bottom: 10px;}
+.rowElement img{float: left; width: 45%; margin-right: 10px;}
+.rowElement h2{color: #284ba9;}
+.rowElement span{font-size: 13px;}
+.titleqs{text-align: right; padding-right: 20px;}
+.textGota{margin-top: 15px;}
+.textGota img{float: left; margin-right: 20px; margin-top: 10px;}
+.textGota p{border-top: 1px solid #ccc; padding-top: 10px; float: left; width: 90%;}
+
+.navside{margin-top: 20px;}
+.navside li{background: linear-gradient(#053183, #0c2860); padding: 10px; padding-left: 20px; border-bottom: 1px solid #ebeced; transition: all 0.3s linear;}
+.navside li a{color: #fff;}
+.navside li:hover{background: linear-gradient(#f2d00d, #ebb403);}
+
+/*servicios*/
+.boxDetail img{float: left; margin-right: 10px;}
+.detailService{float: left; width: 190px;}
+.titleDetail{font-size: 14px; padding-left: 0px; color: #284ba9; font-weight: bold;}
+
+.ask{color: #37a4fb;}
+.boldOrange{color: #a10ab3;}
+.textOranges{color: #eca804; text-shadow:0 1px 0 #ccc;}
+.noone, .notwo, .nothree{color: #f1ca0b; font-weight: bold; font-size: 36px;}
+.notwo{color: #37a4fb;}
+.nothree{color: #284ba9;}
+.stepTwo{margin-top: 100px;}
+.stepThree{margin-top: 270px;}
+
+.totwo{position: absolute; top: 200px; left: 180px;}
+.tothree{position: absolute; top: 420px; right: 220px;}
+
+/*testimonios*/
+.rowTestim{margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #ccc;}
+.boxTestim{width: 410px; float: left;}
+.boxTestim img{float: left; margin-right: 5px;}
+.boxTestim p{float: left; width: 90%;}
+
+.ocupaty{text-align: right; margin-top: 20px;}
+.ocupaty span{font-style: oblique; display: block;}
+.comclose{float: none !important;}
+
+.titleYellow{background: linear-gradient(#f2cf0d,#ecb604); color: #fff; font-weight: bold; font-size: 20px; padding: 10px 0 10px 20px; margin: 15px 0;}
+#contacto fieldset{border: none; padding: 0px;}
+#contacto input, #contacto textarea{background: #f8f8f8; border: none; border: 1px solid #ccc; border-radius: 3px; padding: 7px 5px; font-size: 13px; width: 325px; margin-bottom: 7px;}
+#contacto input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: #7b8f9e;}
+#contacto input:-moz-placeholder, textarea:-moz-placeholder {color: #7b8f9e;}
+#enviar{background: linear-gradient(#f2cf0d,#ecb604) !important; border: none !important; width: 150px !important; font-weight: bold; color: #fff;}
+#enviar:hover{background: #ecb604 !important;}
+
+/*contacto*/
+#map_canvas{width: 100%; min-height: 250px; background: #ccc; border:1px solid #999; margin-bottom: 20px;}
+.boxSucursal{width: 285px; float: left; margin-left: 10px; padding-bottom: 15px;}
+.boxSucursal span{display: block; color: #7b8f9e; margin-bottom: 3px;}
+.boxSucursal span small{color: #eca804; font-size: 13px;}
+.titleSuc{color: #eca804 !important; display: block; margin-bottom: 15px !important;}
+.success{background: #64c14b; color: #fff; text-shadow:0 1px 0 #ccc; padding: 10px 0; border:1px solid #49a72f; text-align: center; border-radius: 3px;}
+.error{color: #dc6a48 !important; border:1px solid #cc471f !important;}
+#captcha{width: 150px !important; float: left; margin-right: 10px;}
+#imgcode{margin-top: 3px !important; float: left;}
+
 
 /*footer*/
-.boxfooter{width: 100%; background: #07113f; padding-top: 15px;}
-.navfooter{
-    font-family: arial; 
-    font-size: 15px; 
-    padding: 10px;
-}
-.boxfooter li {display: inline-block; color: #5fb6fc;}
-.boxfooter li a{margin: 0 10px;}
-.navpoliticas li{display: inline-block; color: #eca804;}
-.navpoliticas li a{margin: 0 10px;}
+footer{background: #07113f; padding: 25px 0;}
 
-/*HOME*/
-.boxhome{margin-top: 15px; background: linear-gradient(#fefefe, #f4f4f5); }
-.leermashome{background: linear-gradient(#f2cf0d,#ecb604); padding: 15px; }
+.navFooter li{display: inline-block; margin-right: 10px; font-size: 14px;}
+.navFooter li a{color: #5fb6fc; transition: all 0.3s linear; text-shadow:0 1px 0 #333;}
+.navFooter li a:hover{color: #fff;}
+
+footer span a{color: #eca804; margin-left: 10px;}
+footer span a:hover{text-decoration: underline;}
+
+
 /*QUIENES SOMOS*/
 .menuquienessomos ul li{color: #fff;}
